@@ -212,6 +212,8 @@ main {
   margin-top: 12px;
 }
 
+.profile-links-2 { margin-top: 10px; }
+
 a.btn, a.btn:visited {
   display: inline-flex;
   align-items: center;
