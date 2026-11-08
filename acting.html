@@ -4,119 +4,113 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Acting, Michael Carozza</title>
-  <meta name="description" content="Acting credits, training, and resume for Michael Carozza.">
-  <meta name="theme-color" content="#F0F2F1">
+  <meta name="description" content="Selected acting credits for Michael Carozza in London, regional, and educational theatre.">
+  <meta name="color-scheme" content="light dark">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Literata:ital,opsz,wght@0,7..72,300..700;1,7..72,300..700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">
-        <svg class="bulb" viewBox="0 0 24 36" aria-hidden="true" focusable="false">
-          <circle class="glow" cx="12" cy="8" r="5"/>
-          <path d="M10 13.5h4M12 14v16M6 34l6-4 6 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="brand-name">Michael Carozza</span>
-      </a>
-      <nav aria-label="Main">
-        <ul class="nav">
-          <li><a href="index.html">Plays</a></li>
-          <li><a href="acting.html" aria-current="page">Acting</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="about.html#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Michael Carozza</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">playwriting</a></li>
+        <li class="sep" aria-hidden="true">&middot;</li>
+        <li><a href="acting.html" aria-current="page">acting</a></li>
+        <li class="sep" aria-hidden="true">&middot;</li>
+        <li><a href="about.html">about</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
-  <main id="main">
-    <div class="wrap">
-      <h1 class="page-title">Acting</h1>
+  <div class="container">
+    <main id="main">
+      <h1 class="sr-only">Acting credits, Michael Carozza</h1>
 
-      <div class="script">
-        <div class="row intro">
-          <div class="text">
-            <p class="lede">[One sentence on your acting work, such as the kinds of roles and companies you work with.]</p>
-            <p class="links" style="margin-top:1rem">
-              <a href="files/acting-resume.pdf">Download the acting resume (PDF)</a>
-            </p>
-          </div>
-          <div class="margin">
-            <div class="photo-slot">[Headshot]</div>
-          </div>
-        </div>
+      <p><a class="btn" href="files/resume.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg> Resume</a></p>
 
-        <section class="section" aria-labelledby="theatre">
-          <div class="row">
-            <h2 id="theatre" class="text">Theatre</h2>
-          </div>
+      <h2>London</h2>
+      <ul class="works">
+        <li>
+          <span class="title">The First Actress</span>
+          <span class="note">Lord Hatton</span>
+          <span class="venue">Palindrome Productions</span>
+          <span class="details">Directed by Lesley Ferris</span>
+        </li>
+        <li>
+          <span class="title">Branches</span>
+          <span class="note">The Man</span>
+          <span class="venue">Tristan Bates Theatre</span>
+          <span class="details">Directed by Jennifer Schlueter</span>
+        </li>
+      </ul>
 
-          <div class="row credit">
-            <div class="text">
-              <p class="what"><em>[Production]</em>, [Role]</p>
-              <p class="where">[Company, venue]</p>
-            </div>
-            <div class="margin"><p>[Year]</p></div>
-          </div>
+      <h2>Regional</h2>
+      <ul class="works">
+        <li>
+          <span class="title">The Countess of Monte Cristo</span>
+          <span class="note">Peppino</span>
+          <span class="venue">Actor's Theatre of Columbus</span>
+          <span class="details">Directed by Adam Simon</span>
+        </li>
+        <li>
+          <span class="title">The Maderati</span>
+          <span class="note">Martin Royale</span>
+          <span class="venue">Haberdasher Theatre Co.</span>
+          <span class="details">Directed by Hollie Klem</span>
+        </li>
+        <li>
+          <span class="title">Richard III</span>
+          <span class="note">Brackenbury</span>
+          <span class="venue">Actor's Theatre of Columbus</span>
+          <span class="details">Directed by Jennifer Feather Youngblood</span>
+        </li>
+        <li>
+          <span class="title">Spring Awakening</span>
+          <span class="note">Hanschen</span>
+          <span class="venue">Machinery of Night Co.</span>
+          <span class="details">Directed by Shelby Brewster</span>
+        </li>
+        <li>
+          <span class="title">Bare: A Pop Opera</span>
+          <span class="note">Alan</span>
+          <span class="venue">Evolution Theatre Company</span>
+          <span class="details">Directed by Patrick Brady McGregor II</span>
+        </li>
+        <li>
+          <span class="title">Too Many Sopranos</span>
+          <span class="note">Gabriel</span>
+          <span class="venue">Opera Project Columbus</span>
+          <span class="details">Directed by Dione Parker Bennett</span>
+        </li>
+      </ul>
 
-          <div class="row credit">
-            <div class="text">
-              <p class="what"><em>[Production]</em>, [Role]</p>
-              <p class="where">[Company, venue]</p>
-            </div>
-            <div class="margin"><p>[Year]</p></div>
-          </div>
+      <h2>Educational</h2>
+      <ul class="works">
+        <li>
+          <span class="title">City of Angels</span>
+          <span class="note">Del Dacosta</span>
+          <span class="venue">The Ohio State University Dept. of Theatre</span>
+          <span class="details">Directed by A. Scott Parry</span>
+        </li>
+      </ul>
 
-          <div class="row credit">
-            <div class="text">
-              <p class="what"><em>[Production]</em>, [Role]</p>
-              <p class="where">[Company, venue]</p>
-            </div>
-            <div class="margin"><p>[Year]</p></div>
-          </div>
-        </section>
+      <h2>Special Skills</h2>
+      <p>Stage combat (advanced), clarinet, equestrian experience (basic).</p>
+    </main>
+  </div>
 
-        <section class="section" aria-labelledby="screen">
-          <div class="row">
-            <h2 id="screen" class="text">Film and television</h2>
-          </div>
-
-          <div class="row credit">
-            <div class="text">
-              <p class="what"><em>[Title]</em>, [Role]</p>
-              <p class="where">[Director or production company]</p>
-            </div>
-            <div class="margin"><p>[Year]</p></div>
-          </div>
-        </section>
-
-        <section class="section" aria-labelledby="training">
-          <div class="row">
-            <h2 id="training" class="text">Training</h2>
-          </div>
-
-          <div class="row credit">
-            <div class="text">
-              <p class="what">B.A. in Theatre and English with Honors</p>
-              <p class="where">The Ohio State University</p>
-            </div>
-            <div class="margin"><p>[Year]</p></div>
-          </div>
-        </section>
-      </div>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>&copy; 2026 Michael Carozza. Scripts are protected by copyright and may not be produced or reproduced without written permission.</p>
-    </div>
+  <footer class="container site-footer">
+    <p>&copy; 2026 Michael Carozza. Scripts are protected by copyright and may not be produced or reproduced without written permission.</p>
   </footer>
 </body>
 </html>

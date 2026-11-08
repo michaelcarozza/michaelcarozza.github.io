@@ -3,120 +3,138 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Michael Carozza, Playwright</title>
-  <meta name="description" content="Plays, resumes, and scripts by Michael Carozza, a playwright, performer, and producer in New York.">
-  <meta name="theme-color" content="#F0F2F1">
+  <title>Michael Carozza</title>
+  <meta name="description" content="Michael Carozza is a playwright, performer, and producer in New York. Plays, scripts, and resume.">
+  <meta name="color-scheme" content="light dark">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Literata:ital,opsz,wght@0,7..72,300..700;1,7..72,300..700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
-<body class="home">
+<body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html" aria-label="Michael Carozza, home">
-        <svg class="bulb" viewBox="0 0 24 36" aria-hidden="true" focusable="false">
-          <circle class="glow" cx="12" cy="8" r="5"/>
-          <path d="M10 13.5h4M12 14v16M6 34l6-4 6 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="brand-name">Michael Carozza</span>
-      </a>
-      <nav aria-label="Main">
-        <ul class="nav">
-          <li><a href="index.html" aria-current="page">Plays</a></li>
-          <li><a href="acting.html">Acting</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="about.html#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Michael Carozza</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page">playwriting</a></li>
+        <li class="sep" aria-hidden="true">&middot;</li>
+        <li><a href="acting.html">acting</a></li>
+        <li class="sep" aria-hidden="true">&middot;</li>
+        <li><a href="about.html">about</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
-  <main id="main">
-    <div class="wrap">
-      <section class="hero">
-        <h1>Michael Carozza</h1>
-      </section>
+  <div class="container">
+    <main id="main">
+      <h1 class="sr-only">Michael Carozza, playwright, performer, and producer</h1>
 
-      <div class="script">
-        <div class="row intro">
-          <div class="text">
-            <p class="lede">Playwright, performer, and producer based in New York. Founder of Machinery of Night, a theatre collective. Member of the Dramatists Guild of America.</p>
+      <div class="profile">
+        <!-- To add a photo, save it as files/self.webp and replace this div with:
+             <img class="profile-photo" alt="Michael Carozza" src="files/self.webp" width="150" height="150"> -->
+        <div class="profile-photo placeholder" role="img" aria-label="Photo placeholder">MC</div>
+        <div class="profile-info">
+          Playwright, performer, and producer<br>
+          Founder, Machinery of Night<br>
+          New York, NY<br>
+          <span data-email data-user="carozzam" data-domain="gmail.com"><noscript>carozzam [at] gmail [dot] com</noscript></span>
+          <div class="profile-links">
+            <a class="btn" href="files/resume.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg> Resume</a>
           </div>
-          <nav class="margin docs" aria-label="Documents">
-            <a href="files/playwriting-resume.pdf">Playwriting resume</a>
-            <a href="files/acting-resume.pdf">Acting resume</a>
-            <a href="files/cv.pdf">CV</a>
-          </nav>
         </div>
-
-        <section class="section" aria-labelledby="full-length">
-          <div class="row">
-            <h2 id="full-length" class="text">Full-length plays</h2>
-          </div>
-
-          <article class="row play">
-            <div class="text">
-              <h3>[Play Title One]</h3>
-              <p>[One or two sentences describing the play, its world, and what is at stake.]</p>
-              <p class="links">
-                <a href="files/plays/play-title-one.pdf">Download the script (PDF)</a>
-              </p>
-            </div>
-            <div class="margin notes">
-              <p>[Cast size]</p>
-              <p>[Running time]</p>
-              <p>[Reading or production, year]</p>
-            </div>
-          </article>
-
-          <article class="row play">
-            <div class="text">
-              <h3>[Play Title Two]</h3>
-              <p>[One or two sentences describing the play, its world, and what is at stake.]</p>
-              <p class="links">
-                <a href="files/plays/play-title-two.pdf">Download the script (PDF)</a>
-              </p>
-            </div>
-            <div class="margin notes">
-              <p>[Cast size]</p>
-              <p>[Running time]</p>
-              <p>[Reading or production, year]</p>
-            </div>
-          </article>
-        </section>
-
-        <section class="section" aria-labelledby="one-acts">
-          <div class="row">
-            <h2 id="one-acts" class="text">One-act plays</h2>
-          </div>
-
-          <article class="row play">
-            <div class="text">
-              <h3>[One-Act Title]</h3>
-              <p>[One or two sentences describing the play.]</p>
-              <p class="links">
-                <a href="files/plays/one-act-title.pdf">Download the script (PDF)</a>
-              </p>
-            </div>
-            <div class="margin notes">
-              <p>[Cast size]</p>
-              <p>[Running time]</p>
-              <p>[Reading or production, year]</p>
-            </div>
-          </article>
-        </section>
       </div>
-    </div>
-  </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>&copy; 2026 Michael Carozza. Scripts are protected by copyright and may not be produced or reproduced without written permission.</p>
-    </div>
+      <h2>Full-Length Plays</h2>
+      <ul class="works">
+        <li>
+          <span class="title">Hear the HOWLs Inside My Head</span>
+          <span class="logline">Committing himself to a mental institution, Allen Ginsberg unravels his sanity, sexuality, and desire, leading him to write the poem that defines a generation.</span>
+          <span class="venue">Staged reading, 7th Annual Graduate Theatre Syndicate Symposium</span>
+          <span class="venue">Staged reading, Machinery of Night Co.</span>
+          <span class="venue">Staged reading, Ohio State Dept. of Theatre Lab Series</span>
+          <span class="venue">Developmental reading, The Ohio State University Dept. of Theatre</span>
+          <span class="details"><a href="files/plays/hear-the-howls-inside-my-head.pdf">Script (PDF)</a><span class="dot">&middot;</span>Cast size: 4; 1 F, 3 M, with doubling</span>
+        </li>
+
+        <li>
+          <span class="title">Weight</span>
+          <span class="note">Adapted from <em>Weight</em> and <em>Oranges Are Not the Only Fruit</em> by Jeanette Winterson</span>
+          <span class="logline">A girl in Northern England and the Titan Atlas carry the world on their shoulders. But what would happen if they put the weight down?</span>
+          <span class="venue">Staged reading, Machinery of Night Co.</span>
+          <span class="venue">Showcase, The Ohio State University Dept. of Theatre</span>
+          <span class="details"><a href="files/plays/weight.pdf">Script (PDF)</a><span class="dot">&middot;</span>Cast size: 7; 4 F, 3 M, and a Greek chorus</span>
+        </li>
+
+        <li>
+          <span class="title">Humiliation Ritual</span>
+          <span class="logline">A little humiliation and humanity seem worth the trade to reach the top of the food chain. Is the deal still good when someone else must pay?</span>
+          <span class="venue">Completed 2026, submitted for production consideration</span>
+          <span class="details"><a href="files/plays/humiliation-ritual.pdf">Script (PDF)</a><span class="dot">&middot;</span>Cast size: 5; 3 F, 2 M</span>
+        </li>
+
+        <li>
+          <span class="title">LIVE/STOCK</span>
+          <span class="logline">In a near-future America, two university prodigies from opposite worlds must choose between their futures and each other.</span>
+          <span class="venue">Completed 2026, submitted for production consideration</span>
+          <span class="details"><a href="files/plays/live-stock.pdf">Script (PDF)</a><span class="dot">&middot;</span>Cast size: 5; 1 F, 2 M, 1 any gender/NB</span>
+        </li>
+
+        <li>
+          <span class="title">The Figaro Trilogy: Scènes de la Beaumarchais</span>
+          <span class="note">Book, adapted from classic opera</span>
+          <span class="logline">Follow Figaro's transformation from cunning barber to family factotum across classic operatic masterpieces by Paisiello, Rossini, Mozart, Massenet, Milhaud, and Corigliano, culminating in the world premiere of scenes from Lawrence Rush and A. Scott Parry's <em>The Guilty Mother</em>.</span>
+          <span class="venue">Full production, The Wexner Center for the Arts</span>
+          <span class="details"><a href="files/plays/the-figaro-trilogy.pdf">Script (PDF)</a><span class="dot">&middot;</span>Cast size: Full opera</span>
+        </li>
+      </ul>
+
+      <h2>Short Plays</h2>
+      <ul class="works">
+        <li>
+          <span class="title">The Weight of the Sun</span>
+          <span class="note">10-minute drama</span>
+          <span class="logline">Sisyphus receives an unlikely visitor in Persephone, inciting a battle of logic between a mortal and a god over the futility of living.</span>
+          <span class="venue">Staged reading, Red Bull Theater: Short New Play Festival (2025)</span>
+          <span class="details"><a href="files/plays/the-weight-of-the-sun.pdf">Script (PDF)</a><span class="dot">&middot;</span>Cast size: 2; any gender/NB</span>
+        </li>
+
+        <li>
+          <span class="title">For a Muse of Fire</span>
+          <span class="note">10-minute drama</span>
+          <span class="logline">A blind woman enters a taxi just trying to get home. Her driver, haunted by his past, finds something that can heal him.</span>
+          <span class="venue">Full production, In Transit: A Series of Short Car Plays</span>
+          <span class="details"><a href="files/plays/for-a-muse-of-fire.pdf">Script (PDF)</a><span class="dot">&middot;</span>Cast size: 2; 1 F, 1 M</span>
+        </li>
+
+        <li>
+          <span class="title">A Film for Two</span>
+          <span class="note">10-minute comedy</span>
+          <span class="logline">Two friends on a Friday night try to focus on a movie when they are interrupted by the drama of another friend who knows too much.</span>
+          <span class="venue">Full production, 24 Hour Theatre Festival, The Ohio State University</span>
+          <span class="details"><a href="files/plays/a-film-for-two.pdf">Script (PDF)</a><span class="dot">&middot;</span>Cast size: 3; any gender/NB</span>
+        </li>
+      </ul>
+
+      <h2>Publications</h2>
+      <ul class="works">
+        <li>
+          <span class="title">The Weight of the Sun</span>
+          <span class="venue">Red Bull Shorts Anthology</span>
+          <span class="details">Sordelet Ink, 2025</span>
+        </li>
+      </ul>
+    </main>
+  </div>
+
+  <footer class="container site-footer">
+    <p>&copy; 2026 Michael Carozza. Scripts are protected by copyright and may not be produced or reproduced without written permission.</p>
   </footer>
 </body>
 </html>
