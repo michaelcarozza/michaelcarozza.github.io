@@ -1,4 +1,4 @@
-/* Michael Carozza, playwright.
+/* Michael Ferdinando Carozza, playwright.
    A quiet, text-first personal site: Montserrat, a sticky nav with a lowercase
    name and links, a round photo beside a short title block, small outlined
    buttons, section headings with a short accent bar, and entries with a
@@ -202,18 +202,6 @@ main {
   object-fit: cover;
 }
 
-/* Stand-in until a photo is added */
-.profile-photo.placeholder {
-  display: grid;
-  place-items: center;
-  background: var(--border-soft);
-  border: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 2rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-}
-
 .profile-info { line-height: 1.8; }
 .profile-info a, .profile-info a:visited { color: var(--text); }
 
@@ -277,6 +265,11 @@ h2::after {
 ul + h2, p + h2, .profile + h2 { margin-top: 40px; }
 
 p + p { margin-top: 1rem; }
+
+.section-note {
+  margin: -4px 0 20px;
+  font-size: 0.8125rem;
+}
 
 /* Entries: plays, credits */
 
@@ -354,6 +347,7 @@ p + p { margin-top: 1rem; }
     min-height: var(--nav-height);
   }
   a.nav-brand, .nav-toggle { line-height: var(--nav-height); }
+  a.nav-brand { font-size: 1rem; }
   .nav-toggle { display: block; }
 
   .nav-links {
