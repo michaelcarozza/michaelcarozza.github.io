@@ -324,6 +324,17 @@ p + p { margin-top: 1rem; }
   font-weight: 500;
 }
 
+/* Two-column credits (acting page) */
+
+.works.two-col {
+  columns: 2;
+  column-gap: 36px;
+}
+.works.two-col li {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+
 /* Skills: a column list, like the resume */
 
 .skills {
@@ -390,6 +401,7 @@ p + p { margin-top: 1rem; }
     text-align: center;
   }
   .profile-links { justify-content: center; }
+  .works.two-col { columns: 1; }
 }
 
 @media (prefers-reduced-motion: reduce) {
